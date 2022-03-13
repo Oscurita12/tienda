@@ -61,6 +61,11 @@ productosBD.forEach(function(producto){
     descripcion.classList.add("text-center")
     descripcion.textContent=producto.descripcion
 
+    //tratar de hacer un boton 
+    /*let boton=document.createElement("button")
+    boton.classList.add("btn btn-info")
+    boton.textContent=*/
+
     //padres e hijos 
     tarjeta.appendChild(foto)
     tarjeta.appendChild(titulo)
