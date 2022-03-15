@@ -63,14 +63,21 @@ productosBD.forEach(function(producto){
 
     //tratar de hacer un boton 
     /*let boton=document.createElement("button")
-    boton.classList.add("btn btn-info")
-    boton.textContent=*/
+    boton.classList("btn")
+    boton.classList("btn-info")
+    boton.textContent="Mostrar producto"*/
+
+    /*const button=document.createElement("button")
+    button.type='button'
+    button.innerText="Mostrar producto"*/
 
     //padres e hijos 
     tarjeta.appendChild(foto)
     tarjeta.appendChild(titulo)
     tarjeta.appendChild(precio)
     tarjeta.appendChild(descripcion)
+    //tarjeta.appendChild(button)
+    //tarjeta.appendChild(boton)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
 

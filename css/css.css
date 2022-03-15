@@ -7,8 +7,33 @@
 }*/
 
 .margin-auto{
-    display: flex;
-    height: 100px;
-    width: 200px;
+    
+    text-align: center;
     margin: auto;
 }
+
+.margin-img {
+
+}
+
+/*.body {
+    height: 800px;
+    background-image: url('https://images8.alphacoders.com/693/thumbbig-693740.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: 25rem;
+    background-position: center;
+    background-attachment: fixed;
+}*/
+
+.body {
+    background-image: url('https://images3.alphacoders.com/852/thumbbig-852216.webp');
+    background-size: 100%;
+    background-attachment: fixed ;
+    
+}
+.container {
+    background-color: rgb(173, 97, 97);
+    
+}
+
