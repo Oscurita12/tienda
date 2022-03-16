@@ -10,6 +10,19 @@
     
     text-align: center;
     margin: auto;
+    background-color: #f7d3a7;
+    background-size: 10%;
+    background-position: 10%;
+
+}
+
+.parrafo {
+    margin-top: 50px;
+}
+
+.nombreProductos {
+    text-align: center;
+    background-color: white;
 }
 
 .margin-img {
@@ -27,13 +40,22 @@
 }*/
 
 .body {
-    background-image: url('https://images3.alphacoders.com/852/thumbbig-852216.webp');
+    background-image: url('https://fondosmil.com/fondo/20294.jpg');
     background-size: 100%;
     background-attachment: fixed ;
     
 }
-.container {
-    background-color: rgb(173, 97, 97);
-    
+
+.img-perfil {
+    width: 70px;
 }
 
+.tienda {
+    background-image: url('https://fondosmil.com/fondo/20288.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.footer {
+    background-color: #f7d3a7;
+}

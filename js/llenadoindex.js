@@ -8,8 +8,9 @@ let personajes=[
     //{fotop: 'img/Gideon_1.jpg', descripcionp: "Pese a su adorable apariencia, Gideon en realidad es todo lo contrario a lo que aparenta. A pesar de su mala actitud, Gideon ha demostrado que de verdad puede ser bueno con aquellos que de verdad quiere y ama, como ocurrió con Mabel la primera vez."},
     //{fotop: 'img/Soos_Ramirez.jpg', descripcionp: "Soos es muy amigable y adorable empleado cuyo deseo de estar donde está la acción, por lo que es un excelente recurso para los gemelos cuando necesitan una vuelta por el pueblo."}, 
     //{fotop: 'img/Pato.jpg', descripcionp: "Es un pequeño cerdito regordete de piel rosada clara. Posee tres manchas, una pequeña ubicada en su ojo izquierdo, otra grande ubicada cerca de su cola, junto a una pequeña también ubicada cerca del mismo lugar."},    
-    {fotop: 'img/El_Viejo_McGucket.jpg', nombre: "Fiddleford McGucket", descripcionp:"Su personalidad es algo demente y loca, pero a lo largo de la serie ha demostrado ser más inteligente de lo que aparenta. Es conocido como el 'loco del pueblo' por su actitud excéntrica."},
-    {fotop: 'img/Bill_Clave.jpg', nombre: "Bill Clave", descripcionp: "Bill es un demonio del sueño que para él todo es divertido y no tiene remordimiento alguno al matar o destruir cosas. Es extraño y da la sensación de que está loco."}
+    {fotop: 'img/Bill_Clave.jpg', nombre: "Bill Clave", descripcionp: "Bill es un demonio del sueño que para él todo es divertido y no tiene remordimiento alguno al matar o destruir cosas. Es extraño y da la sensación de que está loco."},
+    {fotop: 'img/El_Viejo_McGucket.jpg', nombre: "Fiddleford McGucket", descripcionp:"Su personalidad es algo demente y loca, pero a lo largo de la serie ha demostrado ser más inteligente de lo que aparenta. Es conocido como el 'loco del pueblo' por su actitud excéntrica."}
+   
 ]
 
 console.log(personajes)
@@ -23,16 +24,12 @@ personajes.forEach(function(personaje){
 
     let columnap=document.createElement("div")
     columnap.classList.add("col")
-    //columnap.classList.add("card border")
-    //columnap.classList.add("success mb-3")
-
+    
 
     let tarjetap=document.createElement("div")
     tarjetap.classList.add("card")
-    tarjetap.classList.add("h-100")
-    //columnap.classList.add("card border")
-    //columnap.classList.add("success mb-3")
-    //tarjetap.classList.add("card-body")
+    tarjetap.classList.add("border-dark")
+    tarjetap.classList.add("mb-3")
 
     let titulo=document.createElement("h3")
     titulo.classList.add("text-center")

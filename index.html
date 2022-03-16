@@ -34,17 +34,10 @@
                       Más
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Información</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >Información</a></li>                     
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
@@ -56,19 +49,16 @@
         <img src="img/gravityfalls.jpg" alt="fotobanner" class="w-100 img-fluid">
 
         <section>
-            <div class="container mt-5 mb-5">
+            <div class="container mt-5 mb-5" style="background-color: #f7d3a7;" >
                 <div class="row">
                     <div class="col-8 aling-self-center">
 
                         <h1>UN VERANO DE MISTERIOS</h1>
-                        <p>Gravity Falls narra las aventuras de los mellizos de 12 años Dipper y Mabel Pines, que ven cómo se desvanecen sus planes para el verano cuando sus padres deciden mandarlos con su tío-abuelo Grunkle Stan, que vive en el corazón de Gravity Falls un plebo muy poco conocido . Pronto, Dipper y Mabel descubren que en Gravity Falls no todo es lo que parece y confían el uno en el otro totalmente y fielmente igual en sus nuevos amigos para descubrir lo que REALMENTE está sucediendo en este extraño lugar lleno de extrañas raresas y paranormales para lo que en si es normal para ellos ... 
+                        <p class="parrafo">Gravity Falls narra las aventuras de los mellizos de 12 años Dipper y Mabel Pines, que ven cómo se desvanecen sus planes para el verano cuando sus padres deciden mandarlos con su tío-abuelo Grunkle Stan, que vive en el corazón de Gravity Falls un plebo muy poco conocido . Pronto, Dipper y Mabel descubren que en Gravity Falls no todo es lo que parece y confían el uno en el otro totalmente y fielmente igual en sus nuevos amigos para descubrir lo que REALMENTE está sucediendo en este extraño lugar lleno de extrañas raresas y paranormales para lo que en si es normal para ellos ... 
                         </p>
 
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            Button with data-bs-target
-                          </button>
-
                     </div>
+                    
                     <div class="col-4">
 
                         <img src="img/gravityfalls2.png" alt="foto2" class="w-100 img-fluid">
@@ -78,13 +68,38 @@
                 
             </div>
         </section>
-
+        <section>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <img src="img/claraAvestruz.jpg" alt="perfil" class="img-perfil">
+                <h4 class="offcanvas-title" id="offcanvasExampleLabel">Clara Restrepo</h4>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  Me llamo Clara Manuela Restrepo Rúa, tengo 18 años, actualmente estoy cursando el tercer semestre de Técnico laboral como asistente en desarrollo de Software en el CESDE, 
+                </div>
+                <div class="dropdown mt-4">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    Redes sociales
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="https://www.instagram.com/manurestreporua/" target="_black"><i class="fa-brands fa-instagram">Instagram</i></a></li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/manuela.restreporua/" target="_black"><i class="fa-brands fa-facebook">Facebook</i></a></li>
+                    <li><a class="dropdown-item" href="https://twitter.com/ManuRestrepoRua" target="_blank"><i class="fa-brands fa-twitter">Twitter</i></a></li>
+                    <li><a class="dropdown-item" href="https://github.com/Oscurita12" target="_black"><i class="fa-brands fa-github">Oscurita12</i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </section>
     </main>
 
     <main>
-      <h1 class="margin-auto">PERSONAJES PRINCIPALES</h1>
       
-      <div class="container" >
+      
+      <div class="container" style="background-color: #f7d3a7;" >
+        <h1 class="margin-auto">PERSONAJES PRINCIPALES</h1>
         <div class="col">
           <div class="card">
             <div class="row row-cols-1 row-cols-md-3 g-5" 
@@ -96,13 +111,28 @@
       </div>
     </main>
 
+
+    <div class="container: footer; bg-dark">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="text-muted" style="text-decoration: underline;">&copy; 2022 Oscurita, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </footer>
+    </div>
     <footer>
         
     </footer>
 
-    <h4 id="titulo2">OELO</h4>
-
-    <button type="button" class="btn btn-info" id="boton">clic</button>
+   
     
     <script src="js/llenadoTienda.js"></script>
     <script src="js/llenadoindex.js"></script>
