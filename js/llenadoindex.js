@@ -28,6 +28,7 @@ personajes.forEach(function(personaje){
 
     let tarjetap=document.createElement("div")
     tarjetap.classList.add("card")
+    tarjetap.classList.add("h-100")
     tarjetap.classList.add("border-dark")
     tarjetap.classList.add("mb-3")
 
@@ -37,6 +38,7 @@ personajes.forEach(function(personaje){
 
     let foto2p=document.createElement("img")
     foto2p.classList.add("card-img-top")
+    foto2p.classList.add("h-100")
     foto2p.src=personaje.fotop
 
     let descripcionp=document.createElement("p")

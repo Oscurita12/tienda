@@ -53,6 +53,7 @@ productosBD.forEach(function(producto){
     //necesito un img con la clase card-img-top
     let foto=document.createElement("img")
     foto.classList.add("card-img-top")
+    foto.classList.add("h-100")
     foto.src=producto.foto
 
 
