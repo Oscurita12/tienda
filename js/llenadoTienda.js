@@ -107,6 +107,24 @@ filaContenedora.addEventListener("click", function(evento){
         }*/
 
         let modalInfo = new bootstrap.Modal(document.getElementById('modalInfo'))
+
+        //Cargar información de producto dentro del modal
+        let fotoInfo=document.getElementById("fotoInfo")
+        fotoInfo.src=evento.target.parentElement.querySelector("img").src
+
+        let tituloInfo=document.getElementById("tituloInfo")
+        tituloInfo.textContent=evento.target.parentElement.querySelector("h4").textContent
+
+        let precioInfo=document.getElementById("precioInfo")
+        precioInfo.textContent=evento.target.parentElement.querySelector("h5").textContent
+
+        let descripcionInfo=document.getElementById("descripcionInfo")
+        descripcionInfo.textContent=evento.target.parentElement.querySelector("p").textContent
+
+
         modalInfo.show()
+
+        
+
     }
 })
