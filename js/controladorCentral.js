@@ -20,6 +20,8 @@ filaContenedora.addEventListener("click", function(evento){
         producto=ampliarInformacionProducto (evento)
         console.log(producto)
         modalInfo.show()
+
+        Inicializar()
     }
 })
 
@@ -51,15 +53,20 @@ botonAgregarCarrito.addEventListener("click", function(){
 
     modalInfo.hide()
 
+    Subtotal(1)
+
 })
+
 //Rutina para limpiar
 let botonLimpiarCarrito=document.getElementById("botonLimpiar")
 botonLimpiarCarrito.addEventListener("click", function(){
+    Subtotal(0)
     carrito=[]
 
     let capsula=document.getElementById("capsula")
     capsula.classList.add("invisible")
 })
+
 //Rutina para ver carrito 
 let botonVerCarrito=document.getElementById("verCarrito")
 botonVerCarrito.addEventListener("click", function(){
@@ -84,8 +91,29 @@ botonVerCarrito.addEventListener("click", function(){
         foto.classList.add("w-100", "img-fluid")
         foto.src=producto.foto
 
+        let titulo=document.createElement("h4")
+        titulo.classList.add("text-center")
+        titulo.textContent=producto.titulo
+
+        let precio=document.createElement("h5")
+        precio.classList.add("text-center")
+        precio.textContent=producto.precio
+
+        let descripcion=document.createElement("p")
+        descripcion.classList.add("text-center")
+        descripcion.textContent=producto.descripcion
+
+        let cantidad=document.createElement("p")
+        cantidad.classList.add("text-center")
+        cantidad.textContent=producto.cantidad
+
+
         //PADRES E HIJOS
         columna1.appendChild(foto)
+        columna2.appendChild(titulo)
+        columna2.appendChild(precio)
+        columna2.appendChild(descripcion)
+        columna2.appendChild(cantidad)
         fila.appendChild(columna1)
         fila.appendChild(columna2)
         base.appendChild(fila)
@@ -94,3 +122,26 @@ botonVerCarrito.addEventListener("click", function(){
 
     modalCompra.show()
 })
+
+function Inicializar () {
+    let cantidad=document.getElementById("cantidadProducto")
+    cantidad.value="1"
+}
+
+let subtotal=document.getElementById("subtotal")
+function Subtotal (validar) {
+    let total=0
+
+    carrito.forEach(function(producto){
+        if(validar==1){
+            total=total+(Number(producto.cantidad) * Number(producto.precio))
+            subtotal.textContent=total
+        }
+        else {
+            total=0
+            subtotal.textContent=""
+           
+        }
+    })
+    
+}
