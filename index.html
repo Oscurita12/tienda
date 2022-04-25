@@ -29,6 +29,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#personajes">Personajes</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#personajes" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Registrate</a>
+                  </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Más
@@ -46,7 +49,7 @@
 
     <main>
 
-      <section>
+      <!--section>
         <form>
           <div class="mb-3">
             <label class="form-label">Email</label>
@@ -58,7 +61,7 @@
           </div>
           <button type="submit" class="btn btn-primary w-100" id="botonRegistro">Registro</button>
         </form>
-      </section>
+      </section-->
 
         <img src="img/gravityfalls.jpg" alt="fotobanner" class="w-100 img-fluid">
 
@@ -82,6 +85,30 @@
                 
             </div>
         </section>
+
+        <section>
+          <div class="offcanvas offcanvas-top" tabindex="-2" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Registro</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form id="form">
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100" id="botonRegistro">Registro</button>
+              </form>
+            </div>
+          </div>
+          
+        </section>
+
         <section>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
@@ -108,6 +135,18 @@
             </div>
       </section>
     </main>
+     
+    <form id="form">
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+      <button type="submit" class="btn btn-primary w-100" id="botonRegistro">Registro</button>
+    </form>
 
     <main>
       

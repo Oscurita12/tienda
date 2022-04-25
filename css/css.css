@@ -64,3 +64,11 @@
     font-size: 20px;
     color: #CE9855;
 }
+
+#form {
+    width: 50%;
+    margin: auto;
+}
+#offcanvasTopLabel {
+    margin: auto;
+}
