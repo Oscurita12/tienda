@@ -133,8 +133,13 @@ function Subtotal (validar) {
     let total=0
 
     carrito.forEach(function(producto){
+        console.log(producto.precio)
+        let prueba=(producto.precio.split("$")[1])
+        let prueba2=(prueba.split("COP")[0])
+        console.log(prueba2)
+        console.log(Number(prueba2))
         if(validar==1){
-            total=total+(Number(producto.cantidad) * Number(producto.precio))
+            total=total+(Number(producto.cantidad) * Number(prueba2))
             subtotal.textContent=total
         }
         else {
