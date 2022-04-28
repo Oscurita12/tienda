@@ -36,6 +36,8 @@ botonAgregarCarrito.addEventListener("click", function(){
     let cantidad=document.getElementById("cantidadProducto").value
     producto.cantidad=cantidad
 
+    producto.subtotal=producto.cantidad*producto.precio
+
     //Agrego los productos al carrito 
     carrito.push(producto)
 
@@ -107,6 +109,10 @@ botonVerCarrito.addEventListener("click", function(){
         cantidad.classList.add("text-center")
         cantidad.textContent=producto.cantidad
 
+        let Subtotal = document.createElement("p")
+        Subtotal.textContent="Subtotal: "+producto.subtotal
+        Subtotal.classList.add("text-center")
+
 
         //PADRES E HIJOS
         columna1.appendChild(foto)
@@ -114,6 +120,7 @@ botonVerCarrito.addEventListener("click", function(){
         columna2.appendChild(precio)
         columna2.appendChild(descripcion)
         columna2.appendChild(cantidad)
+        columna2.appendChild(Subtotal)
         fila.appendChild(columna1)
         fila.appendChild(columna2)
         base.appendChild(fila)
