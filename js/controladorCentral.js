@@ -35,8 +35,13 @@ botonAgregarCarrito.addEventListener("click", function(){
     //Debo capturar la canntidad y agregarla al producto 
     let cantidad=document.getElementById("cantidadProducto").value
     producto.cantidad=cantidad
+    let prueba=(producto.precio.split("$")[1])
+    let prueba2=(prueba.split("COP")[0])
 
-    producto.subtotal=producto.cantidad*producto.precio
+    producto.subtotal=producto.cantidad*Number(prueba2)
+    console.log(producto.subtotal);
+    console.log(producto.cantidad);
+    console.log(producto.precio);
 
     //Agrego los productos al carrito 
     carrito.push(producto)
@@ -135,9 +140,10 @@ function Inicializar () {
     cantidad.value="1"
 }
 
+let total=0
 let subtotal=document.getElementById("subtotal")
 function Subtotal (validar) {
-    let total=0
+    
 
     carrito.forEach(function(producto){
         console.log(producto.precio)
@@ -157,3 +163,15 @@ function Subtotal (validar) {
     })
     
 }
+
+let convertir=document.getElementById("convertir")
+let convertidor=document.getElementById("convertidor")
+
+convertidor.addEventListener("click", function(){
+    let pesos=total
+    let dolares=pesos/3955
+
+    convertir.textContent="Precio en dólares: "+dolares.toFixed(2)
+
+})
+
