@@ -69,6 +69,7 @@ let botonLimpiarCarrito=document.getElementById("botonLimpiar")
 botonLimpiarCarrito.addEventListener("click", function(){
     Subtotal(0)
     carrito=[]
+    convertir.textContent=""
 
     let capsula=document.getElementById("capsula")
     capsula.classList.add("invisible")
@@ -140,10 +141,10 @@ function Inicializar () {
     cantidad.value="1"
 }
 
-let total=0
+let total
 let subtotal=document.getElementById("subtotal")
 function Subtotal (validar) {
-    
+    total=0
 
     carrito.forEach(function(producto){
         console.log(producto.precio)
